@@ -2,14 +2,13 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-
 [project]
 name = "temporalvector"
-version = "0.0.1"
+version = "0.1.0"
 authors = [
   { name="Chris McKay", email="crmckay55@gmail.com" },
 ]
-description = "A small example package"
+description = "Temporally aware vector of values that can be aggregated using different methods over different time periods"
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
@@ -19,5 +18,4 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "https://git.jetbrains.space/cmckay/advanced-simulation/pkg_temporal_vector.git"
