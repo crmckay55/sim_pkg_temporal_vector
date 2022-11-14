@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "temporalvector"
-version = "0.1.0"
+version = "1.0.0"
 authors = [
   { name="Chris McKay", email="crmckay55@gmail.com" },
 ]
@@ -18,4 +18,4 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://git.jetbrains.space/cmckay/advanced-simulation/pkg_temporal_vector.git"
+"Homepage" = "https://github.com/crmckay55/sim_pkg_temporal_vector.git"

@@ -35,8 +35,8 @@ class TemporalVector:
         self.__base_timescale = baseline_timescale
         self.__base_aggregation = aggregation
 
-    def update_by_index(self, start_index: int = 0, end_index: int = 0, length: int = 0,
-                        value=None, timescale: tve.VectorTimescales = None) -> None:
+    def update_by_index(self, timescale: tve.VectorTimescales, start_index: int = 0, end_index: int = 0,
+                        length: int = 0, value=None) -> None:
         """
         Updates a value, or series of values, in the vector. end_index and length are optional, but at least one
         of the two must be specified.  Indices beyond the length of the vector will be ignored
@@ -165,7 +165,7 @@ class TemporalVector:
 
         return c_sum
 
-    def get(self, target_timescale: tve.VectorTimescales = None) -> np.array:
+    def get(self, target_timescale: tve.VectorTimescales) -> np.array:
         """
         Get the vector in the timescale of choice.
         :param target_timescale:  default is base timescale, but explicitly
@@ -249,7 +249,7 @@ class TemporalVector:
 
         return self.__vector
 
-    def __validate_operand(self, vector, timescale: tve.VectorTimescales = None) -> np.array:
+    def __validate_operand(self, vector, timescale: tve.VectorTimescales) -> np.array:
         """
         Checks if vector is a TemporalVector or a list of equal length to base timescale.  Also converts
         passed list, temporal vector, or array to a numpy array

@@ -15,10 +15,9 @@ This is used to abstract the underlying vector functionality to make the simulat
 
 Download links:
 
-SSH clone URL: ssh://git@git.jetbrains.space/cmckay/advanced-simulation/pkg_temporal_vector.git
+HTTPS clone URL: https://github.com/crmckay55/sim_pkg_temporal_vector.git
 
-HTTPS clone URL: https://git.jetbrains.space/cmckay/advanced-simulation/pkg_temporal_vector.git
-
+pip install temporalvector
 
 
 ## How to use this package
